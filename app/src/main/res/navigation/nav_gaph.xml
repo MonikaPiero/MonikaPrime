@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gaph"
+    app:startDestination="@id/loginIpFragment">
+    <fragment
+        android:id="@+id/loginIpFragment"
+        tools:layout="@layout/fragment_login_ip"
+        android:name="com.example.monikaprime.login.LoginIpFragment"
+        android:label="LoginIpFragment" >
+        <action
+            android:id="@+id/action_loginIpFragment_to_firstSettingPageFragment2"
+            app:destination="@id/firstSettingPageFragment2" />
+        <action
+            android:id="@+id/action_loginIpFragment_to_firstSettingPageFragment22"
+            app:destination="@id/firstSettingPageFragment2" />
+        <action
+            android:id="@+id/action_loginIpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_first_setting_page"
+        android:id="@+id/firstSettingPageFragment2"
+        android:name="com.example.monikaprime.login.FirstSettingPageFragment"
+        android:label="FirstSettingPageFragment" >
+        <action
+            android:id="@+id/action_firstSettingPageFragment2_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        tools:layout="@layout/fragment_main"
+        android:name="com.example.monikaprime.main.MainFragment"
+        android:label="MainFragment" />
+</navigation>
